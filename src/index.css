@@ -1,0 +1,49 @@
+main{
+  min-height: 80vh;
+}
+
+.rating {
+  color: #f8e825;
+  margin: 0.1rem;
+}
+
+.my-button{
+  border: 1px solid black;
+  color: black;
+  background-color: white;
+  display: block;
+  width: 200px;
+  margin-bottom: 3;
+}
+
+.wrapper{
+  max-height: 400px;
+  border:1px solid #ddd;
+  display: flex;
+  overflow-x: hidden;
+
+
+}
+.wrapper .item{
+
+display: grid;
+grid-template-columns: auto auto auto;
+grid-gap: 20px;
+padding: 10px;
+flex:none;
+
+transition: transform 0.5s;
+}
+.wrapper::-webkit-scrollbar{
+  display: none;
+ 
+}
+#backbtn, #backbtn{
+  cursor: pointer;
+
+}
+.wrapper .item:hover{
+  filter: grayscale(0);
+  cursor:pointer;
+  transform: scale(1.1);
+}
